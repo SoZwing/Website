@@ -603,7 +603,7 @@ textarea {
   width: 70px;
   height: 100%;
   max-width: 70px;
-  background-color: #F3F3F3;
+  background-color: #b0cfc7;
 }
 
 @media screen and (max-width: 1350px) {
@@ -621,7 +621,7 @@ textarea {
   width: 70px;
   height: 100%;
   max-width: 70px;
-  background-color: #F3F3F3;
+  background-color: #b0cfc7;
 }
 
 @media screen and (max-width: 1350px) {
