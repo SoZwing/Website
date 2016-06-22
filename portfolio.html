@@ -26,9 +26,9 @@
 
         <!-- Owl -->
         <link rel="stylesheet" href="assets/css/owl.carousel.css">
-
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+		
+		<!-- Magnific Popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -98,30 +98,18 @@
                         </ul>
                     </div>
                     <div class="gallery-items padding-md gutter three-columns">
-                        <a href="single-project.html">
-                            <div class="one-item design">
-                                <img src="img/cohabitation/1.jpg" alt="Cohabitation">
-                                <div class="content">
-                                    <h3>Cohabitation</h3>
-                                    <ul class="categories">
-                                        <li>Beaux-arts</li>
-                                        <li>2009</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="assets/img/work4.jpg" class="lightbox">
-                            <div class="one-item branding">
+                        <a href="img/peau_vegetale/1.jpg" class="gallery-image">
+						    <div class="one-item branding">
                                 <img src="img/peau_vegetale/1.jpg" alt="Peau vegetale">
                                 <div class="content">
                                     <h3>Peau vegetale</h3>
                                     <ul class="categories">
-                                      <li>Beaux-arts</li>
-                                      <li>2011</li>
+                                        <li>Beaux-arts</li>
+                                        <li>2011</li>
                                     </ul>
                                 </div>
                             </div>
-                        </a>
+						</a>
                     </div>
                 </section>
                 <!--  END Gallery  -->
@@ -170,5 +158,24 @@
         <script src="assets/js/imagesloaded.min.js"></script>
         <script src="assets/js/pace.min.js"></script>
         <script src="assets/js/main.js"></script>
+		
+		<script>
+        $( document ).ready(function() {
+            $('.gallery-image').magnificPopup({
+                items: [
+				{
+                    src: 'img/peau_vegetale/1.jpg',
+					title: 'Ceci est la premiere image'
+                },{
+                    src: 'img/peau_vegetale/2.jpg',
+					title: 'Et voila la seconde image'
+                }],
+				gallery: {
+                    enabled: true
+                },
+                type: 'image'
+            });
+        });
+        </script>
     </body>
 </html>
