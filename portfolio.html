@@ -93,13 +93,19 @@
                     <div class="row">
                         <ul class="col-md-12 filters text-right">
                             <li data-filter="*" class="is-checked">All</li>
-                            <li data-filter=".design">Drawing</li>
-                            <li data-filter=".branding">Photo</li>
+                            <li data-filter=".photo">Photo</li>
+							<li data-filter=".drawing">Drawing</li>
+		                    <li data-filter=".edition">Edition</li>
+							<li data-filter=".etching">Etching</li>
+							<li data-filter=".performance">Performance</li>
+							<li data-filter=".video">Video</li>
+							<li data-filter=".volume">Volume</li>
                         </ul>
                     </div>
                     <div class="gallery-items padding-md gutter three-columns">
-                        <a href="img/peau_vegetale/1.jpg" class="gallery-image">
-						    <div class="one-item branding">
+					
+                        <a href="img/peau_vegetale/1.jpg" id="project-peau-vegetale">
+						    <div class="one-item drawing">
                                 <img src="img/peau_vegetale/1.jpg" alt="Peau vegetale">
                                 <div class="content">
                                     <h3>Peau vegetale</h3>
@@ -110,6 +116,7 @@
                                 </div>
                             </div>
 						</a>
+						
                     </div>
                 </section>
                 <!--  END Gallery  -->
@@ -161,7 +168,7 @@
 		
 		<script>
         $( document ).ready(function() {
-            $('.gallery-image').magnificPopup({
+            $('#project-peau-vegetale').magnificPopup({
                 items: [
 				{
                     src: 'img/peau_vegetale/1.jpg',
